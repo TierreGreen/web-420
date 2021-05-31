@@ -1,3 +1,13 @@
+/*
+=====================================================
+; Title: Assignment 1.2
+; Author: Professor Krasso
+; Date May 30, 2021
+; Modified By: Tierre Green
+; Description: Assignment 1.2
+=====================================================
+*/
+
 const express = require("express");
 
 const http = require("http");
