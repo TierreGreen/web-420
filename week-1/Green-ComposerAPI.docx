@@ -1,0 +1,58 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>Relation</id><coordinates><x>120</x><y>93</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>63</y><w>130</w><h>70</h></coordinates><panel_attributes>
+Whats
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>63</y><w>130</w><h>70</h></coordinates><panel_attributes>
+Hows
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>63</y><w>130</w><h>70</h></coordinates><panel_attributes>
+Inputs</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>63</y><w>130</w><h>70</h></coordinates><panel_attributes>
+Outputs
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>63</y><w>130</w><h>70</h></coordinates><panel_attributes>
+Goals
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>614</x><y>93</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>333</y><w>130</w><h>70</h></coordinates><panel_attributes>
+All Composers will
+be shown in results.
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>333</y><w>130</w><h>70</h></coordinates><panel_attributes>
+Show the list of
+Composers that exist
+in the API
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>634</x><y>363</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>333</y><w>130</w><h>70</h></coordinates><panel_attributes>_findAllComposers_
+--
+Search for all composers
+in the API</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>333</y><w>140</w><h>70</h></coordinates><panel_attributes>
+Universal Search
+for composers
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>363</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>333</y><w>130</w><h>70</h></coordinates><panel_attributes>
+See the composers
+that are in the API.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>0</x><y>183</y><w>120</w><h>80</h></coordinates><panel_attributes>What can the User 
+do?</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>220</x><y>183</y><w>120</w><h>80</h></coordinates><panel_attributes>How will the User
+do it?</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>360</x><y>183</y><w>120</w><h>80</h></coordinates><panel_attributes>What do they need
+to move to the next
+step?</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>510</x><y>183</y><w>120</w><h>80</h></coordinates><panel_attributes>What will they
+receive from 
+each step?</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>223</x><y>426</y><w>140</w><h>70</h></coordinates><panel_attributes>
+Search for Individual 
+composer
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>373</x><y>426</y><w>130</w><h>70</h></coordinates><panel_attributes>_findByID_
+--
+Search for all 
+composers in the API</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>513</x><y>426</y><w>130</w><h>70</h></coordinates><panel_attributes>
+Only Composers with
+Specific ID will be
+be shown in results.
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>223</x><y>517</y><w>140</w><h>70</h></coordinates><panel_attributes>
+Create Composer
+By User input.
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>373</x><y>517</y><w>130</w><h>70</h></coordinates><panel_attributes>_createComposer_
+--
+Composer Is created 
+by inputing the info
+for that composer.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>513</x><y>517</y><w>130</w><h>70</h></coordinates><panel_attributes>
+New Conmposer will
+show as a result
+of creation.
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>429</y><w>130</w><h>70</h></coordinates><panel_attributes>
+To show the specific
+Composer based on 
+ID selected.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>634</x><y>459</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>519</y><w>140</w><h>70</h></coordinates><panel_attributes>
+New Composer Created
+By user Input.
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>634</x><y>549</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>129</y><w>40</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>20;200;20;130;10;70;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>129</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>129</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>267</x><y>129</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>50</x><y>129</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>50</x><y>259</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>359</y><w>120</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;100;70;90;50;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>359</y><w>120</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;190;60;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>259</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>259</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>259</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element></diagram>

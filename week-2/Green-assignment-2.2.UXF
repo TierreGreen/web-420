@@ -1,0 +1,77 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>90</x><y>70</y><w>210</w><h>70</h></coordinates><panel_attributes>
+
+Create/ add</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>70</y><w>210</w><h>70</h></coordinates><panel_attributes>
+
+POST</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>70</y><w>210</w><h>70</h></coordinates><panel_attributes>
+
+Body</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>140</y><w>210</w><h>50</h></coordinates><panel_attributes>
+Read Retrieve Search</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>190</y><w>210</w><h>70</h></coordinates><panel_attributes>
+Modify, update partially</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>260</y><w>210</w><h>70</h></coordinates><panel_attributes>
+Replace</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>330</y><w>210</w><h>220</h></coordinates><panel_attributes>
+findAllComposers</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>140</y><w>210</w><h>50</h></coordinates><panel_attributes>
+GET</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>140</y><w>210</w><h>50</h></coordinates><panel_attributes>
+Query</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>70</y><w>210</w><h>70</h></coordinates><panel_attributes>
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>70</y><w>210</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>140</y><w>420</w><h>50</h></coordinates><panel_attributes>
+No modifications made</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>190</y><w>210</w><h>70</h></coordinates><panel_attributes>
+PATCH</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>190</y><w>210</w><h>70</h></coordinates><panel_attributes>
+Body</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>190</y><w>210</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>190</y><w>210</w><h>70</h></coordinates><panel_attributes>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>260</y><w>210</w><h>70</h></coordinates><panel_attributes>
+PUT</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>260</y><w>210</w><h>70</h></coordinates><panel_attributes>
+Body</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>260</y><w>210</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>260</y><w>210</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>330</y><w>210</w><h>220</h></coordinates><panel_attributes>
+GET</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>330</y><w>210</w><h>220</h></coordinates><panel_attributes>
+Query</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>330</y><w>210</w><h>220</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>330</y><w>210</w><h>220</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>40</y><w>210</w><h>30</h></coordinates><panel_attributes>Action</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>40</y><w>210</w><h>30</h></coordinates><panel_attributes>HTTP Method</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>40</y><w>210</w><h>30</h></coordinates><panel_attributes>Before Request</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>40</y><w>210</w><h>30</h></coordinates><panel_attributes>Parameters</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>40</y><w>210</w><h>30</h></coordinates><panel_attributes>After Request</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>790</x><y>80</y><w>70</w><h>60</h></coordinates><panel_attributes>
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>960</x><y>70</y><w>170</w><h>70</h></coordinates><panel_attributes>[{"composer":
+   { "first_name": "Prince",
+   "last_name": "Nelson"}
+}]
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>740</x><y>190</y><w>170</w><h>70</h></coordinates><panel_attributes>[{"composer": [
+   { "first_name": "Prince",
+   "last_name": "Nelson"}]
+}]
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>960</x><y>330</y><w>160</w><h>220</h></coordinates><panel_attributes>[
+ {
+   "composer": [
+     { 
+       "first_name": "Prince",
+       "last_name": "Nelson"
+     },
+     {
+       "first_name": "Michael",
+       "last_name": "Jackson"
+      }
+    ]   
+  }
+]
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>730</x><y>330</y><w>190</w><h>220</h></coordinates><panel_attributes>findAllComposers();
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>960</x><y>190</y><w>170</w><h>70</h></coordinates><panel_attributes>[{"composer": [
+   { "first_name": "Prince",
+   "brith_date: "June 7, 1958"}]
+}]
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>740</x><y>260</y><w>170</w><h>70</h></coordinates><panel_attributes>[{"composer": [
+   { "first_name": "Prince",
+   "last_name": "Nelson"}]
+}]
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>960</x><y>260</y><w>170</w><h>70</h></coordinates><panel_attributes>[{"composer": [
+   { "first_name": "Michael",
+   "last_name": "Jackson"}]
+}]
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>550</y><w>210</w><h>120</h></coordinates><panel_attributes>
+findComposerById
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>550</y><w>210</w><h>120</h></coordinates><panel_attributes>
+GET
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>550</y><w>210</w><h>120</h></coordinates><panel_attributes>
+QUERY
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>550</y><w>210</w><h>120</h></coordinates><panel_attributes>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>550</y><w>210</w><h>120</h></coordinates><panel_attributes>
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>930</x><y>550</y><w>210</w><h>120</h></coordinates><panel_attributes>findComposerById({"_id": "156sd"});
+
+{ 
+       ""_id": ObjectId("156sd"),
+       "first_name": "Prince",
+       "last_name": "Nelson"
+}
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>720</x><y>550</y><w>210</w><h>120</h></coordinates><panel_attributes>findComposerById({"_id": "156sd"});
+
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>
