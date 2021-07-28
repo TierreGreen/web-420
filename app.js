@@ -14,19 +14,34 @@ const http = require("http");
 
 const swaggerUi = require("swagger-ui-express");
 
-const swaggerJsdoc = ("swagger-jsdoc");
+const swaggerJsdoc = require("swagger-jsdoc");
 
 const mongoose = require('mongoose');
 
-let app = express();
+const composerAPI = require('./routes/green-composer-routes');
+const nodeShopperAPI = require('./routes/green-node-shopper-routes');
+const personAPI = require('./routes/green-person-routes');
+const sessionAPI = require('./routes/green-session-routes');
+const teamAPI = require('./routes/green-team-routes');
 
-app.set('port', process.env.PORT || 3001);
+let app = express();
 
 app.use(express.json());
 
 app.use(express.urlencoded({
     extended: true
 }));
+
+const conn = "mongodb+srv://TGreen3023:uVH5Hp5Jbex90PnU@buwebdev-cluster-1.bxuwh.mongodb.net/EMS?retryWrites=true&w=majority";
+mongoose.connect(conn, {
+    promiseLibrary: require('bluebird'),
+    useUnifiedTopology: true,
+    useNewUrlParser: true
+}).then(() => {
+    console.log(`Connection to web420DB on MongoDB Atlas successful`);
+}).catch(err => {
+    console.log(`MongoDB Error: ${err.message}`);
+})
 
 const options = {
     definition: {
@@ -49,3 +64,4 @@ http.createServer(app).listen(3000, function() {
 
 });
 
+app.set('port', process.env.PORT || 3000);
