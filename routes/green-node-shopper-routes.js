@@ -12,41 +12,43 @@ const router = express.Router();
 const Student = require('../models/green-customer.js');
 
 /**
-* createCustomer
-* @openapi
-* /api/customers
-*  post:
-*    tags:
-*      - Customers
-*    name: createCustomer
-*    summary: create new Customer document
-*    requestBody:
-*     description: Customer information
-*     content:
-*       application/json:
-*         schema:
-*           required:
-*             - firstName
-*             - lastName
-*             - userName
-*             - invoices
-*           properties:
-*             firstName:
-*               type: string
-*             lastName:
-*                type: string
-*             userName:
-*                   type: string
-*             invoices:
-*                 type: array
-*                 items: invoiceSchema
-*     responses:
-*       '200':
-*         description: Customer added to MongoDB
-*       '500':
-*         description: Server Exception
-*       '501':
-*          description: MongoDB Exception
+createCustomer
+@openapi
+paths:
+  /api/customers
+    post:
+      tags:
+        - Customers
+      name: createCustomer
+      summary: create new Customer document
+      requestBody:
+        description: Customer information
+        content:
+          application/json:
+            schema:
+              required:
+                - firstName
+                - lastName
+                - userName
+                - invoices
+              properties:
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                userName:
+                  type: string
+                invoices:
+                  type: array
+                  items: invoiceSchema
+        responses:
+          "200":
+            description: Customer added to MongoDB
+          "500":
+            description: Server Exception
+          "501":
+            description: MongoDB Exception
+
 */
 
 router.post('/customers', async(req, res) => {
@@ -78,47 +80,48 @@ router.post('/customers', async(req, res) => {
     }
 })
 /**
-* createInvoiceByUserName
-* @openapi
-* /api/customers/:userName/invoices
-*  post:
-*    tags:
-*      - Customers
-*    name: createInvoicesByUserName
-*    summary: Create invoices after looking up document by userName
-*    requestBody:
-*     description: userName and invoice information
-*     content:
-*       application/json:
-*         schema:
-*           required:
-*             - userName
-*             - subtotal
-*             - tax
-*             - dateCreated
-*             - dateShipped
-*             - lineItems
-*           properties:
-*             userName:
-*               type: string
-*             subtotal:
-*                type: string
-*             tax:
-*                   type: string
-*             dateCreated:
-*                   type: string
-*             dateShipped:
-*                   type: string
-*             lineItems:
-*                 type: array
-*                 items: lineItem objects
-*     responses:
-*       '200':
-*         description: Customer added to MongoDB
-*       '500':
-*         description: Server Exception
-*       '501':
-*          description: MongoDB Exception
+createInvoiceByUserName
+@openapi
+/api/customers/:userName/invoices
+  post:
+    tags:
+      - Customers
+    name: createInvoicesByUserName
+    summary: Create invoices after looking up document by userName
+    requestBody:
+      description: userName and invoice information
+      content:
+        application/json:
+          schema:
+            required:
+              - userName
+              - subtotal
+              - tax
+              - dateCreated
+              - dateShipped
+              - lineItems
+            properties:
+              userName:
+                type: string
+              subtotal:
+                type: string
+              tax:
+                type: string
+              dateCreated:
+                type: string
+              dateShipped:
+                type: string
+              lineItems:
+                type: array
+                items: lineItem objects
+      responses:
+        "200":
+          description: Customer added to MongoDB
+        "500":
+          description: Server Exception
+        "501":
+          description: MongoDB Exception
+
 */
 
 router.post('/customers/:userName/invoices', async(req,res) => {
@@ -155,28 +158,29 @@ router.post('/customers/:userName/invoices', async(req,res) => {
 })
 
 /**
- * findAllInvoicesByUserName
-* @openapi
-* /api/customers/:userName/invoices
-*  get:
-*    tags:
-*      - Customers
-*    name:  findAllInvoicesByUserName
-*    summary: Display all invoices associated with userName
-*    requestBody:
-*     description: display all invoice information
-*     content:
-*       application/json:
-*         params:
-*           required:
-*             - userName
-*     responses:
-*       '200':
-*         description: Customer added to MongoDB
-*       '500':
-*         description: Server Exception
-*       '501':
-*          description: MongoDB Exception
+findAllInvoicesByUserName
+@openapi
+  /api/customers/:userName/invoices
+    get:
+      tags:
+        - Customers
+      name: findAllInvoicesByUserName
+      summary: Display all invoices associated with userName
+      requestBody:
+        description: display all invoice information
+        content:
+          application/json:
+            params:
+              required:
+                - userName
+        responses:
+          "200":
+            description: Customer added to MongoDB
+          "500":
+            description: Server Exception
+          "501":
+            description: MongoDB Exception
+
 */
 router.get('/customers/:userName/invoices', async(req, res) => {
     try {

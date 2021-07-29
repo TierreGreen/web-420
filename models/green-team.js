@@ -28,4 +28,4 @@ let teamSchema = new Schema({
 })
 
 //export statement
-module.exports = mongoose('Team', teamSchema);
+module.exports = mongoose.model('Team', teamSchema);

@@ -10,23 +10,25 @@
 
 const express = require('express');
 const router = express.Router();
-const Composer = require('..models/green-composer.js');
+const Composer = require('../models/green-composer.js');
 
-/**findAllComposers
-* @openapi
-* /api/composers:
-    get:
-        tags:
-            - Composers
-        description: API for returning an array of composer objects.
-        summary: returns an array of composers in JSON format.
-        responses:
-            '200':
-                description: list of composers.
-            '501':
-                description: will respond with 'Mongo Exception'.
-            '500':
-                description: will respond with 'Server Exception'.
+/**
+findAllComposers
+@openapi
+/api/composers
+  get:
+    tags:
+      - Composers
+    description: API for returning an array of composer objects.
+    summary: returns an array of composers in JSON format.
+    responses:
+      "200":
+        description: list of composers.
+      "501":
+        description: will respond with 'Mongo Exception'.
+      "500":
+        description: will respond with 'Server Exception'.
+
 */
 router.get('/composers', async(req, res) => {
     try {
@@ -50,28 +52,29 @@ router.get('/composers', async(req, res) => {
 })
 
 /**
- * findComposerById
- * @openapi
- * /api/composers/{id}:
- *  get:
- *      tags:
- *          - Composers
- *      description: API for returning a composer document
- *      summary: returns a composer document
- *      parameters:
- *          - name: id
- *            in: path
- *            required: true
- *            description: Composer document id
- *            schema:
- *              type: string
- *      responses:
- *          '200':
- *              description: Composer document
- *          '500': 
- *              description: Server exception
- *          '501':
- *              description: MongoDB Exception
+findComposerById
+@openapi
+  /api/composers/{id}
+    get:
+      tags:
+        - Composers
+      description: API for returning a composer document
+      summary: returns a composer document
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Composer document id
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Composer document
+        "500":
+          description: Server exception
+        "501":
+          description: MongoDB Exception
+
  */
 router.get('/composer/:id', async(req, res) => {
     try {
@@ -95,32 +98,33 @@ router.get('/composer/:id', async(req, res) => {
 })
 
 /**
- * createComposer
- * @openapi
- * /api/composers:
- *   post:
- *     tags:
- *       - Composers
- *     name: createComposer
- *     description: API for adding a new composer document to MongoDB Atlas
- *     summary: Creates a new composer document
- *     requestBody:
- *       description: composer information
- *       content:
- *         application/json:
- *           schema:
- *             required:
- *               - type
- *             properties:
- *               type:
- *                 type: string
- *     responses:
- *       '200':
- *         description: composer added
- *       '500':
- *         description: Server Exception
- *       '501':
- *         description: MongoDB Exception
+createComposer
+@openapi
+  /api/composers
+    post:
+      tags:
+        - Composers
+      name: createComposer
+      description: API for adding a new composer document to MongoDB Atlas
+      summary: Creates a new composer document
+      requestBody:
+        description: composer information
+        content:
+          application/json:
+            schema:
+              required:
+                - type
+              properties:
+                type:
+                  type: string
+      responses:
+        "200":
+          description: composer added
+        "500":
+          description: Server Exception
+        "501":
+          description: MongoDB Exception
+
  */
 router.post('/composers', async(req, res) => {
     try {

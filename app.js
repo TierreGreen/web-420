@@ -26,6 +26,8 @@ const teamAPI = require('./routes/green-team-routes');
 
 let app = express();
 
+app.set('port', process.env.PORT || 3000);
+
 app.use(express.json());
 
 app.use(express.urlencoded({
@@ -58,10 +60,14 @@ const openapiSpecification = swaggerJsdoc(options);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openapiSpecification));
 
+app.use('/api', composerAPI);
+app.use('/api', nodeShopperAPI);
+app.use('/api', personAPI);
+app.use('/api', sessionAPI);
+app.use('/api', teamAPI);
+
 http.createServer(app).listen(3000, function() {
 
     console.log("Application started and is listening on port 3000!");
 
 });
-
-app.set('port', process.env.PORT || 3000);

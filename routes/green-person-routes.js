@@ -12,21 +12,21 @@ const router = express.Router();
 const Person = require('../models/green-person.js');
 
 /**
- * findAllPersons
- * @openapi
- * /api/persons:
- *   get:
- *     tags:
- *       - Persons
- *     description: API for returning a list of person documents from MongoODB
- *     summary: return list of person document
- *     responses:
- *       '200':
- *         description: Array of persons
- *       '500':
- *         description: Server Exception
- *       '501':
- *         description: MongoDB Exception
+findAllPersons
+@openapi
+  /api/persons
+    get:
+      tags:
+        - Persons
+      description: API for returning a list of person documents from MongoODB
+      summary: return list of person document
+      responses:
+        "200":
+          description: Array of persons
+        "500":
+          description: Server Exception
+        "501":
+          description: MongoDB Exception
  */
 router.get('/persons', async(req, res) => {
     try {
@@ -50,47 +50,48 @@ router.get('/persons', async(req, res) => {
 })
 
 /**
- * createPerson
- * @openapi
- * /api/persons:
- *   post:
- *     tags:
- *       - Persons
- *     name: createPerson
- *     summary: Creates a new Person document
- *     requestBody:
- *       description: Person information
- *       content:
- *         application/json:
- *           schema:
- *             required:
- *               - firstName
- *               - lastName
- *               - roles
- *               - dependents
- *               - birthDate
- *             properties:
- *               firstName:
- *                 type: string
- *               lastName:
- *                 type: string
- *               roles
- *                 type: array
- *                 items:
- *                   type: object
- *               dependents:
- *                 type: array
- *                 items:
- *                   type: object
- *               birthDate:
- *                 type: string
- *     responses:
- *       '200':
- *         description: Person added to MongoDB Atlas
- *       '500':
- *         description: Server Exception
- *       '501':
- *         description: MongoDB Exception
+createPerson
+@openapi
+/api/persons
+  post:
+    tags:
+      - Persons
+    name: createPerson
+    summary: Creates a new Person document
+    requestBody:
+      description: Person information
+      content:
+        application/json:
+          schema:
+            required:
+              - firstName
+              - lastName
+              - roles
+              - dependents
+              - birthDate
+            properties:
+              firstName:
+                type: string
+              lastName:
+                type: string
+              roles:
+                type: array
+                items:
+                  type: object
+              dependents:
+                type: array
+                items:
+                  type: object
+              birthDate:
+                type: string
+  responses:
+    "200":
+      description: Person added to MongoDB Atlas
+    "500":
+      description: Server Exception
+    "501":
+      description: MongoDB Exception
+
  */
 router.post('/persons', async(req, res) => {
     try {

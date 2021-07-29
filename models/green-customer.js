@@ -32,4 +32,4 @@ let customerSchema = new Schema({
     invoices: [ invoiceSchema ]
 })
 
-module.exports = mongoose('Customer', customerSchema);
+module.exports = mongoose.model('Customer', customerSchema);

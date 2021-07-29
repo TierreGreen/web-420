@@ -19,39 +19,40 @@ const bcrypt = require('bcryptjs');
 const saltRounds = 10;
 
 /*
-* create NewUser
-* @openapi
-* /api/signup
-*  post:
-*    tags:
-*      - Users
-*    name: Signup
-*    summary: Create new users, check to make sure duplicate users are not added
-*    requestBody:
-*     description: 
-*     content:
-*       application/json:
-*         schema:
-*           required:
-*             - userName
-*             - password
-*             - email
-*           properties:
-*             userName:
-*               type: string
-*             password:
-*                type: string
-*             email:
-*                 type: string
-*     responses:
-*       '200':
-*         description: Registered User
-*       '401:
-*         description: Username already in use
-*       '500':
-*         description: Server Exception
-*       '501':
-*          description: MongoDB Exception
+createNewUser
+@openapi
+  /api/signup
+    post:
+      tags:
+        - Users
+      name: Signup
+      summary: Create new users, check to make sure duplicate users are not added
+      requestBody:
+      description:
+      content:
+        application/json:
+          schema:
+            required:
+              - userName
+              - password
+              - email
+            properties:
+              userName:
+                type: string
+              password:
+                type: string
+              email:
+                type: string
+      responses:
+        "200":
+          description: Registered User
+        "401":
+          description: Username already in use
+        "500":
+          description: Server Exception
+        "501":
+          description: MongoDB Exception
+
 */
 router.post('/signup', async(req, res) => {
     try {
@@ -100,39 +101,39 @@ router.post('/signup', async(req, res) => {
 })
 
 /**
-* Verify password
-* @openapi
-* /api/login
-*  post:
-*    tags:
-*      - Users
-*    name: Signup
-*    summary: Verify username and/or password
-*    requestBody:
-*     description: 
-*     content:
-*       application/json:
-*         schema:
-*           required:
-*             - userName
-*             - password
-*             - email
-*           properties:
-*             userName:
-*               type: string
-*             password:
-*                type: string
-*             email:
-*                 type: string
-*     responses:
-*       '200':
-*         description: User logged in
-*       '401:
-*         description: Invalid username and/or password
-*       '500':
-*         description: Server Exception
-*       '501':
-*          description: MongoDB Exception
+verify password
+@openapi
+/api/login
+  post:
+    tags:
+      - Users
+    name: Signup
+    summary: Verify username and/or password
+    requestBody:
+     description: 
+     content:
+       application/json:
+         schema:
+           required:
+             - userName
+             - password
+             - email
+           properties:
+             userName:
+               type: string
+             password:
+                type: string
+             email:
+                 type: string
+     responses:
+       '200':
+         description: User logged in
+       '401':
+         description: Invalid username and/or password
+       '500':
+         description: Server Exception
+       '501':
+          description: MongoDB Exception
 */
 
 router.post('/login', async(req, res) => {
@@ -174,7 +175,6 @@ router.post('/login', async(req, res) => {
         })
     }
 })
-
 
 // exports
 module.exports = router;
